@@ -1,0 +1,14 @@
+telnet 
+netstat
+ping 
+nc
+nmap
+ps
+sed
+
+
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\Raj\Downloads\apache-ant-1.9.0-bin\apache-ant-1.9.0\bin;%M2%;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin
+
+
+
+Maven Installation Java Project with Maven-POM Step by Step -1
