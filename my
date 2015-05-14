@@ -1,0 +1,78 @@
+
+https://rundeck-dev.caltesting.org/user/login;jsessionid=pr5ubqg7rmjf2mnu74o238ec --- rundeck login URL
+
+https://app-01.rundeck.wdpibadger.prod.iad3.caltesting.org/
+
+ssh bpeddada@do-util-01.iad3.caltesting.org
+
+ssh 54.218.167.27 global-munin-01.us-west-2.load.aws.caltesting.org
+
+ssh ncea-mt-dev.caltesting.org --- access   10.11.41.12
+
+ssh law-dev-02.caltesting.org  --- access   10.11.40.5
+
+ssh app-01.tc.mten.dev.law.caltesting.org  ---  accessc
+
+ssh jenkins.caltesting.org --- access   10.11.36.248
+
+http://localhost:8080/ (Apache-Tomcat) username : tomcat Pswd: s3cret
+
+ssh cal-trans.caltesting.org ... 10.9.210.25
+
+ssh 54.202.77.83 caaspp-toms-bat-01.us-west-2.load.aws.caltesting.org
+
+caaspp-mt-dev
+
+ssh app-01.rundeck.mten.dev.law.caltesting.org ---  (10.11.40.53) access only to ITO Team. 
+https://app-01.rundeck.mten.dev.law.caltesting.org
+https://app-01.rundeck.mten.dev.law.caltesting.org/user/login
+https://rundeck-dev.caltesting.org/user/login;jsessionid=pr5ubqg7rmjf2mnu74o238ec --- rundeck login URL
+
+
+
+ssh app-01.mt.caaspp.prod.iad3.caltesting.org
+
+ssh app-02.mt.caaspp.prod.iad3.caltesting.org
+
+ssh app-03.mt.caaspp.prod.iad3.caltesting.org
+
+ssh app-04.mt.caaspp.prod.iad3.caltesting.org
+
+
+ssh caaspp-sqa-01.mn.caltesting.org
+
+ssh caaspp-uat-01.mn.caltesting.org
+
+ssh bat-02.mt.caaspp.prod.iad3.caltesting.org
+
+ssh bat-03.mt.caaspp.prod.iad3.caltesting.org
+
+ssh bat-04.mt.caaspp.prod.iad3.caltesting.org
+
+ssh bat-01.mt.caaspp.mirror.iad3.caltesting.org
+
+ssh uat-trans-01.mn.caltesting.org
+
+ssh trans-01.caaspp.prod.iad3.caltesting.org
+
+
+
+
+elasticsearch---  http://localhost:9200
+
+[sbhatia@monolith ~]$ for x in app-{01..04}.mt.caaspp.prod.iad3.caltesting.org ; do echo " ==== $x ====" ; ssh ${x} "grep ' 403 ' /var/log/httpd/access_log" | awk '{print $3}' | sort | uniq -c ; done
+ ==== app-01.mt.caaspp.prod.iad3.caltesting.org
+
+
+
+
+z9QcWdqtqWtshgKf
+
+
+
+
+o7fe7PUyMtoqddpH
+
+127.0.0.1
+
+

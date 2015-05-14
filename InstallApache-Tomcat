@@ -1,0 +1,89 @@
+
+#Install Apache-Tomcat7#
+
+I am going to work with the core installer, in the core sub section click the item tar.gz. Once after done this, you will be able to download the apache-tomcat-7.0.61.tar.gz file.
+
+URL : https://tomcat.apache.org/download-70.cgi
+
+wget http://apache.spinellicreations.com/tomcat/tomcat-7/v7.0.61/bin/apache-tomcat-7.0.61.tar.gz
+
+I just downloaded the apache-tomcat-7.0.61.tar.gz file.
+
+#Creating the installation directory
+
+I have created and work follow path directory whiteroom/apache/tomcat
+
+In the terminal to create the path directory suggested above, be sure to be located in your home user directory, I mean, /home/username.
+
+[bpeddada@LLT440-00030 ~]$ pwd
+/home/bpeddada
+[bpeddada@LLT440-00030 ~]$ 
+
+My username is bpeddada.Now create the path directory by execute the command mkdir -p whiteroom/apache/tomcat.
+
+[bpeddada@LLT440-00030 ~]$ mkdir -p whiteroom/apache/tomcat
+[bpeddada@LLT440-00030 ~]$ 
+
+Creating the path directory whiteroom/apache/tomcat
+
+#Copying the installer to our customized installation directory
+
+Now copy or move the Tomcat installer (apache-tomcat-7.0.61.tar.gz) to the path directory whiteroom/apache/tomcat.
+
+#Now go to the path directory whiteroom/apache/tomcat 
+
+By execute the command cd whiteroom/apache/tomcat
+
+[bpeddada@LLT440-00030 ~]$ cd whiteroom/apache/tomcat
+[bpeddada@LLT440-00030 tomcat]$ ls 
+apache-tomcat-7.0.61.tar.gz
+
+#Unpacking the .tar.gz file
+
+Now time to work with apache-tomcat-7.0.61.tar.gz file, we only need to unpack it by executing the command tar -zxvf apache-tomcat-7.0.61.tar.gz
+
+[bpeddada@LLT440-00030 tomcat]$ tar -zxvf apache-tomcat-7.0.61.tar.gz
+[bpeddada@LLT440-00030 tomcat]$ ls 
+apache-tomcat-7.0.61  apache-tomcat-7.0.61.tar.gz
+
+After the execution of the command a new directory called apache-tomcat-7.0.61 must appear,
+
+#Going to the apache-tomcat-7.0.61/bin directory
+
+Execute the command cd apache-tomcat-7.0.61/bin
+
+[bpeddada@LLT440-00030 tomcat]$ cd apache-tomcat-7.0.61/bin/
+[bpeddada@LLT440-00030 bin]$
+
+See what files in the apache-tomcat-7.0.61/bin directory
+
+[bpeddada@LLT440-00030 bin]$ ls 
+bootstrap.jar                 daemon.sh         startup.sh
+catalina.bat                  digest.bat        tomcat-juli.jar
+catalina.sh                   digest.sh         tomcat-native.tar.gz
+catalina-tasks.xml            setclasspath.bat  tool-wrapper.bat
+commons-daemon.jar            setclasspath.sh   tool-wrapper.sh
+commons-daemon-native.tar.gz  shutdown.bat      version.bat
+configtest.bat                shutdown.sh       version.sh
+configtest.sh                 startup.bat
+
+#Startup the Apache Tomcat Server
+
+To startup Tomcat by executing the command ./startup.sh
+
+[bpeddada@LLT440-00030 bin]$ ./startup.sh
+
+Tomcat started.
+
+Startup Apache Tomcat Server through the execution of the startup.sh file script
+
+To check if the Tomcat has started successfully,open the Web Browser and write in the URL http://localhost:8080. If all is correct you must see the tomcat manager page.
+
+#Shutdown the Apache Tomcat Server
+
+Again in the apache-tomcat-7.0.61/bin directory we have the shutdown.sh file script
+
+To shutdown Tomcat just execute the command ./shutdown.sh
+
+[bpeddada@LLT440-00030 bin]$ ./shutdown.sh
+

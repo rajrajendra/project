@@ -1,0 +1,15 @@
+
+
+attached is the slow query report from yesterdays logs
+
+
+Code Here:
+Explain Tool: ssh://git@stash.caltesting.org:2222/lt/slow-queries.git
+pgBadger: ssh://git@stash.caltesting.org:2222/lt/pgbadger.git
+
+
+steps to run :
+ 
+./pgbadger --prefix '%m %u@%d[%p] [%c-%l]' ~/caaspp-mt-prod_slow_queries_20150402 > run.py
+
+ PYTHONPATH=~/experiments/query-parser/ python run.py > report2.txt

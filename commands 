@@ -1,0 +1,23 @@
+commands 
+ls -1 /etc/[abcd]*.conf
+lscpu
+lshw -short
+lspci
+lsusb
+lsblk
+df -H
+mount | column -t
+free -m
+cat /proc/cpuinfo
+cat /proc/meminfo
+cat /proc/version
+cat /proc/scsi/scsi
+cat /proc/partitions
+head -n1 /etc/issue
+grep MemTotal /proc/meminfo
+grep "model name" /proc/cpuinfo
+lshw -businfo
+lspci -v | grep VGA
+man uname
+ps -ef
+
